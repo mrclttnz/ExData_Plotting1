@@ -4,9 +4,10 @@ setwd("C:/projects/Coursera/Exploratory Data Analysis/Assignment/week1/work/ExDa
 # if you have already read the data you can skip the following line
 source("./readDataset.R")
 
+png(filename="plot1.png", width=480, height=480, units="px", bg="White")
 
+par(mar=c(5,4,2,1))
 hist(rawData$Global_active_power, main="Global Active Power", col="red", 
      xlab="Global Active Power (kilowatts)", ylab="Frequency")
 
-dev.copy(png, file="plot1.png")
 dev.off()
