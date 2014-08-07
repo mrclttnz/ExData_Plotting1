@@ -5,7 +5,9 @@ setwd("C:/projects/Coursera/Exploratory Data Analysis/Assignment/week1/work/ExDa
 source("./readDataset.R")
 
 png(filename="plot2.png", width=480, height=480, units="px", bg="White")
+
 par(mfrow=c(1,1), mar=c(3,4,1,1))
-with(rawData,plot(DateTime, Global_active_power, type="l", 
+with(data,plot(DateTime, Global_active_power, type="l", 
      ylab="Global Active Power (kilowatts)", xlab=""))
+
 dev.off()

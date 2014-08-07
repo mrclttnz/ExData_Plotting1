@@ -8,11 +8,11 @@ png(filename="plot3.png", width=480, height=480, units="px", bg="White")
 
 par(mfrow=c(1,1), mar=c(3,4,1,1))
 
-with(rawData, plot(DateTime, Sub_metering_1, xlab="", ylab="Energy sub metering", type="n"))
+with(data, plot(DateTime, Sub_metering_1, xlab="", ylab="Energy sub metering", type="n"))
 
-with(rawData, lines(DateTime, Sub_metering_1, type="l", col="black"))
-with(rawData, lines(DateTime, Sub_metering_2, type="l", col="red"))
-with(rawData, lines(DateTime, Sub_metering_3, type="l", col="blue"))
+with(data, lines(DateTime, Sub_metering_1, type="l", col="black"))
+with(data, lines(DateTime, Sub_metering_2, type="l", col="red"))
+with(data, lines(DateTime, Sub_metering_3, type="l", col="blue"))
 
 legend("topright", pch=NULL, col=c("black", "red", "blue"), 
        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
