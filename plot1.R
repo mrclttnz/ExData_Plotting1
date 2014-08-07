@@ -6,7 +6,7 @@ source("./readDataset.R")
 
 png(filename="plot1.png", width=480, height=480, units="px", bg="White")
 
-par(mar=c(5,4,2,1))
+par(mfrow=c(1,1), mar=c(5,4,2,1))
 hist(rawData$Global_active_power, main="Global Active Power", col="red", 
      xlab="Global Active Power (kilowatts)", ylab="Frequency")
 
