@@ -20,9 +20,3 @@ legend("topright", pch=NULL, col=c("black", "red", "blue"),
 
 dev.off()
 
-
-par(mfrow=c(1,1))
-with(airquality, plot(Wind,Ozone, main="Ozone and Wind in New York City", type="n"))
-with(subset(airquality, Month==5), lines(Wind, Ozone, col="blue", type="l"))
-with(subset(airquality, Month!=5), lines(Wind, Ozone, col="red", type="l"))
-legend("topright", pch=1, col=c("blue", "red"), legend=c("May", "Other Months"))
