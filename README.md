@@ -1,4 +1,11 @@
-## Introduction
+## Coursera "Exploratory Data Analysis" - First Assignment
+The files in this repository are for the assignemnt #1 of the "Exploratory Data Analysis" course on Coursera.
+As requested, there are four .R files, one for each of the plots. Since the instructions asked to also include the code for reading the input data, this part has been implemented in its own source file (readDatarest.R), which is then included in each of the four plotX.R files.
+In order to run the code in a different location from the one I've used, you need to change the path in each of the file source files (4 plotX.R and readDataset.R).
+
+
+
+## Assignment Introduction
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
